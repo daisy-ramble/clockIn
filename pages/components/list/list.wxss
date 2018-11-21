@@ -1,0 +1,35 @@
+/* pages/list.wxss */
+.list_item_box {
+  padding: 28rpx 34rpx;
+  border-bottom: 1px solid #eee;
+}
+.state {
+  border: 1px solid #b4b5b6;
+  border-radius: 50%;
+  height: 50rpx;
+  width: 50rpx;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 100%;
+  position: relative;
+}
+
+.state image {
+  width: 54rpx;
+  height: 54rpx;
+  position: absolute;
+  top: -6rpx;
+  left: 6rpx;
+  /* margin: 2px 1px; */
+}
+.task_name {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 22rpx;
+}
+.list_item_box.done .state {
+  border-color: #ccc;
+}
+.list_item_box.done .task_name {
+  color: #ccc;
+}

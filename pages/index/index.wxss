@@ -1,0 +1,30 @@
+/* pages/home/home.wxss */
+.nav_bar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  line-height: 110rpx;
+}
+.nav_bar_item {
+  width: 50%;
+  text-align: center;
+  border-bottom: 2px solid #e5e5e5;
+}
+.nav_bar_item.on {
+  border-bottom: 2px solid #3B9CFF;
+}
+.add_task {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 70rpx;
+  position: absolute;
+  bottom: 80rpx;
+  right: 50rpx;
+  color: #fff;
+  background: linear-gradient(-45deg, #3981FF, #3B9CFF);
+  border-radius: 50%;
+  border: 1px solid #3881FF;
+  box-shadow: 0px 3px 12px 0px rgba(59,151,255,0.4)
+}

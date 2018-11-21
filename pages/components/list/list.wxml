@@ -1,0 +1,8 @@
+<!--pages/list.wxml-->
+<view class="list_item_box {{done? 'done': ''}}">
+  <view class="state">
+    <image wx:if="{{done}}" src="../../../assets/tick.png"></image>
+  </view>
+  <view class="task_name">{{taskName}}</view>
+  <view></view>
+</view>

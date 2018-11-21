@@ -1,0 +1,50 @@
+<view class="nav_bar">
+  <view bindtap="onTab" data-type="day" class="nav_bar_item {{now==='day'? 'on': ''}}">每日打卡</view>
+  <view bindtap="onTab" data-type="week" class="nav_bar_item {{now==='week'? 'on': ''}}">每周打卡</view>
+</view>
+<!-- <view bindtap='' wx:for="{{dayList}}" wx:key="index" wx:if="{{now==='day'}}" class="day_list">
+  <list taskName="{{item.name}}"></list>
+</view> -->
+<view wx:if="{{now==='day'}}">
+  <list wx:for="{{dayList}}" wx:key="index" data-idx="{{index}}" data-list="dayList" 
+    bindtap="changeState"  
+    taskName="{{item.name}}"
+    done="{{item.done}}"
+  ></list>
+</view>
+<view wx:if="{{now==='week'}}">
+  <list wx:for="{{weekList}}" wx:key="index" data-idx="{{index}}" data-list="weekList"
+    bindtap="changeState"
+    taskName="{{item.name}}"
+    done="{{item.done}}"></list>
+</view>
+<view class="add_task" bindtap="addTask">+</view>
+
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+  </view>
+  <button bindtap='goHome' class="start-btn">Let's start</button>
+</view> -->
+<!-- <wxs module="m1">
+var getMax = function(array) {
+  var max = undefined;
+  for (var i = 0; i < array.length; ++i) {
+    max = max === undefined ? 
+      array[i] : 
+      (max >= array[i] ? max : array[i]);
+  }
+  return max;
+}
+
+module.exports.getMax = getMax;
+</wxs> -->
+
+<!-- <view> {{m1.getMax(array)}} </view> -->

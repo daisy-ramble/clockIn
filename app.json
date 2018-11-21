@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/hello/hello",
+    "pages/myHome/myHome",
+    "pages/logs/logs",
+    "pages/statistics/statistics",
+    "pages/addTask/addTask"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3B9CFF",
+    "navigationBarTitleText": "番茄打卡",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "assets/clock_on.png",
+        "iconPath": "assets/clock.png",
+        "pagePath": "pages/index/index",
+        "text": "打卡"
+      },
+      {
+        "selectedIconPath": "assets/statistics_on.png",
+        "iconPath": "assets/statistics.png",
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计"
+      },
+      {
+        "selectedIconPath": "assets/my_on.png",
+        "iconPath": "assets/my.png",
+        "pagePath": "pages/myHome/myHome",
+        "text": "我的"
+      }
+    ]
+  }
+}
