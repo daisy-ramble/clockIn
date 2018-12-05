@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
 	"appid": "wx730c62b59da35dc6",
-	"projectname": "first",
+	"projectname": "todo",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

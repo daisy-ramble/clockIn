@@ -5,9 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    period: [
+      {
+        id: 1,
+        name: '每天'
+      },
+      {
+        id: 7,
+        name: '每周'
+      },
+      {
+        id: 0,
+        name: '自定义'
+    }],
+    date: ''
   },
-
+  bindDateChange (e) {
+    console.log(e)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

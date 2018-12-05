@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "新建任务"
+  "navigationBarTitleText": "新建任务",
+  "usingComponents": {
+    "selector": "../components/selector/selector"
+  }
 }

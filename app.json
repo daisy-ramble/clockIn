@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/addTask/addTask",
     "pages/index/index",
     "pages/hello/hello",
     "pages/myHome/myHome",
     "pages/logs/logs",
-    "pages/statistics/statistics",
-    "pages/addTask/addTask"
+    "pages/statistics/statistics"
   ],
   "window": {
     "backgroundTextStyle": "light",

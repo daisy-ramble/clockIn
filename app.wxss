@@ -8,3 +8,17 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+form {
+  display: block;
+}
+input, picker {
+  border: 1px solid #e1e1e1;
+  padding: 20rpx 24rpx;
+  border-radius: 8rpx;
+}
+picker {
+  padding-right: 12rpx;
+}
+/* picker {
+  background: red;
+} */

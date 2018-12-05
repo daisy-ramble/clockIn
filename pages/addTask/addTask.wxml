@@ -1,3 +1,22 @@
 <!--pages/addTask/addTask.wxml-->
 <!-- <text>pages/addTask/addTask.wxml</text> -->
-<view>新建任务</view>
+<form class="add_form">
+  <view class="form-item">
+    <view class="lable_name">名称</view>
+    <input placeholder="请输入任务名称" auto-focus/>
+  </view>
+  <view class="form-item">
+    <view class="lable_name">周期</view>
+    <selector options="{{period}}"></selector>
+  </view>
+  <view class="form-item">
+    <view class="lable_name">开始时间</view>
+    <selector type="date"></selector>
+    <!-- <picker mode="date" value="{{date}}" start="2018-12-5" bindchange="bindDateChange">
+      <view class="picker_box">
+        <text>{{data}}</text>
+        <image class="picker_icon" src="../../assets/down.png"/>
+      </view>
+    </picker> -->
+  </view>
+</form>

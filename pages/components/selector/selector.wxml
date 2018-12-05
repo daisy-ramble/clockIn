@@ -1,0 +1,24 @@
+<!--pages/components/selector.wxml-->
+<block wx:if="{{type==='default'}}">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{options}}" range-key="{{key}}">
+    <view class="picker_box">
+      <text>{{options[index].name}}</text>
+      <image class="picker_icon" src="../../../assets/down.png"/>
+    </view>
+  </picker>
+</block>
+<block wx:if="{{type==='date'}}">
+  <picker mode="date" value="{{date}}" start="2018-12-5" bindchange="bindDateChange">
+    <view class="picker_box">
+      <text>{{date}}</text>
+      <image class="picker_icon" src="../../../assets/down.png"/>
+    </view>
+  </picker>
+  <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{options}}" range-key="{{key}}">
+    <view class="picker_box">
+      <text>{{options[index].name}}</text>
+      <image class="picker_icon" src="../../../assets/down.png"/>
+    </view>
+  </picker> -->
+</block>
+ 
