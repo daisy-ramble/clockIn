@@ -19,6 +19,10 @@ Component({
     startTime: {
       type: String,
       value: ''
+    },
+    placeholder: {
+      type: String,
+      value: ''
     }
     // down: {
     //   type: Boolean,
@@ -35,9 +39,9 @@ Component({
   /**
    * 组件的初始数据
    */
-  // data: {
-  //   index: ''
-  // },
+  data: {
+    first: true
+  },
 
   /**
    * 组件的方法列表
@@ -46,13 +50,16 @@ Component({
     bindPickerChange: function (e) {
       this.setData({
         index: e.detail.value,
-        down: false
+        first: false
       })
+      this.triggerEvent('pickerchange', e.detail.value) 
     },
     bindDateChange: function(e) {
       this.setData({
         date: e.detail.value,
+        first: false
       })
+      this.triggerEvent('datechange', e.detail.value)
     }
   },
 })

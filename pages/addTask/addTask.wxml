@@ -6,17 +6,21 @@
     <input placeholder="请输入任务名称" auto-focus/>
   </view>
   <view class="form-item">
-    <view class="lable_name">周期</view>
-    <selector options="{{period}}"></selector>
+    <view class="lable_name">周期-官方</view>
+    <selector options="{{period}}" placeholder="请选择周期" bind:pickerchange="changePeriod"></selector>
+  </view>
+  <view class="form-item">
+    <view class="lable_name">周期-自定义</view>
+    <default-sel placeholder="请选择周期" dataList="{{period1}}"></default-sel>
+  </view>
+  <view class="form-item fade" wx:if="{{definedPeriod}}">
+    <view class="lable_name">自定义周期（n天/次）</view>
+    <input placeholder="" auto-focus/>
   </view>
   <view class="form-item">
     <view class="lable_name">开始时间</view>
-    <selector type="date"></selector>
-    <!-- <picker mode="date" value="{{date}}" start="2018-12-5" bindchange="bindDateChange">
-      <view class="picker_box">
-        <text>{{data}}</text>
-        <image class="picker_icon" src="../../assets/down.png"/>
-      </view>
-    </picker> -->
+    <!-- <selector type="date" bind:pickerchange="changePeriod"></selector> -->
+    <default-sel placeholder="请选择开始时间" type="dateFromNow"></default-sel>
   </view>
+  <button class="btn_default add_btn">添加</button>
 </form>

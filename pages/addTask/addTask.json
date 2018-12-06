@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "新建任务",
   "usingComponents": {
-    "selector": "../components/selector/selector"
+    "selector": "../components/selector/selector",
+    "default-sel": "../components/defaultSelector/defaultSelector"
   }
 }

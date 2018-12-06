@@ -2,7 +2,7 @@
 <block wx:if="{{type==='default'}}">
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{options}}" range-key="{{key}}">
     <view class="picker_box">
-      <text>{{options[index].name}}</text>
+      <text class="{{first ? 'placeholder' : ''}}">{{options[index].name || placeholder}}</text>
       <image class="picker_icon" src="../../../assets/down.png"/>
     </view>
   </picker>
@@ -10,7 +10,7 @@
 <block wx:if="{{type==='date'}}">
   <picker mode="date" value="{{date}}" start="2018-12-5" bindchange="bindDateChange">
     <view class="picker_box">
-      <text>{{date}}</text>
+      <text>{{date || placeholder}}</text>
       <image class="picker_icon" src="../../../assets/down.png"/>
     </view>
   </picker>

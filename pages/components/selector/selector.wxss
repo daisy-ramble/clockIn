@@ -9,3 +9,6 @@
   height: 50rpx;
   transform: rotate(-90deg);
 }
+.placeholder {
+  color: #888;
+}

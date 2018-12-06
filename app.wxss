@@ -11,7 +11,7 @@
 form {
   display: block;
 }
-input, picker {
+input, picker, .ipt {
   border: 1px solid #e1e1e1;
   padding: 20rpx 24rpx;
   border-radius: 8rpx;
@@ -19,6 +19,24 @@ input, picker {
 picker {
   padding-right: 12rpx;
 }
+.btn_default {
+  color: #fff;
+  background: linear-gradient(-45deg, #3981FF, #3B9CFF);
+  border: 1px solid #3881FF;
+}
+/* .picker_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.picker_box image {
+  width: 50rpx;
+  height: 50rpx;
+  transform: rotate(-90deg);
+}
+.placeholder {
+  color: #888;
+} */
 /* picker {
   background: red;
 } */

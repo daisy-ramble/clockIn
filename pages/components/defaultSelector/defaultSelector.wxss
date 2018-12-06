@@ -1,0 +1,83 @@
+/* pages/components/defaultSelector/defaultSelector.wxss */
+.picker_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  padding: 20rpx 24rpx;
+  border-radius: 8rpx;
+}
+.picker_box image {
+  width: 50rpx;
+  height: 50rpx;
+  transform: rotate(-90deg);
+}
+.placeholder {
+  color: #888;
+}
+
+.pop-cover {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+.pop-box {
+  position: fixed;
+  bottom:0;
+  width: 100%; 
+  height: 660rpx;
+  background-color: #fff;
+}
+picker-view {
+  height: 100%;
+  width: 100%;
+}
+.op-box {
+  border-bottom: 1px solid #eee; 
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 30rpx;
+  font-size: 16px;
+}
+.op-box view:first-child {
+  color: #999;
+}
+.op-box view:last-child {
+  color: #3B9CFF;
+} 
+picker-view-column {
+  font-size: 14px;
+}
+picker-view-column view{
+  text-align: center;
+}
+picker-view-column:first-child view{
+  padding-left: 30rpx;
+}
+picker-view-column:last-child view{
+  padding-right: 30rpx;
+}
+picker-view-column:first-child:last-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.slide
+{
+  animation: slideUp 0.5s;
+}
+@keyframes slideUp {
+  0% {
+    bottom: -660rpx; /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 660rpx; /*结尾状态 透明度为1*/
+  }
+}

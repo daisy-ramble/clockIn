@@ -1,0 +1,18 @@
+<!--pages/components/defaultSelector/defaultSelector.wxml-->
+<view class="ipt picker_box" bindtap="popShow">
+  <text class="{{first ? 'placeholder' : ''}}">{{val || placeholder}}</text>
+  <image class="picker_icon" src="../../../assets/down.png"/>
+</view>
+<view class="pop-cover" bindtap="popHide" wx:if="{{popShow}}">
+  <view class="pop-box slide">
+    <view class="op-box">
+      <view bindtap="cancel">取消</view>
+      <view bindtap="confirm">确定</view>
+    </view>
+    <picker-view indicator-style="height: 46px;" value="{{pickValue}}" bindchange="bindChange">
+      <picker-view-column wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="itemArr">
+        <view wx:for="{{itemArr}}" style="line-height: 46px">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
